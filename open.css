@@ -70,7 +70,7 @@ div.headerCellMobile{
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
-    font-size:xx-large;
+    font-size:48px;
     color:firebrick;
     padding-top:6px;
     padding-bottom:6px;
@@ -167,7 +167,7 @@ div.basicCellLeftCenterMobile{
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
-    font-size:x-large;
+    font-size:48px;
     color:navy;
 }
 
@@ -179,7 +179,7 @@ div.basicCellRightMobile{
     vertical-align:inherit;
     text-align:right;
     font-family:'Arial Rounded MT';
-    font-size:x-large;
+    font-size:48px;
     color:navy;
     padding-right: 8px;
 }
@@ -189,7 +189,7 @@ div.athleteDetail{
     height:inherit;
     width: 100vw;
     font-family:'Arial Rounded MT';
-    font-size:large;
+    font-size:36px;
     color:black;
 }
 
