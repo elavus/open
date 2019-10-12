@@ -15,6 +15,64 @@ div.headerRow{
     vertical-align:middle;
 }
 
+
+div.headerCellLeft{
+    display: table-cell;
+    height:inherit;
+    width: 12vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:right;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+div.headerCellCenter{
+    display: table-cell;
+    height:inherit;
+    width: 76vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    font-size:64px;
+    color:firebrick;
+}
+
+div.headerCellRight{
+    display: table-cell;
+    height:inherit;
+    width: 12vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:left;
+}
+
+img.headerCellLeft{
+    height:90%;
+}
+
+img.headerCellRight{
+    height:100%
+}
+
+div.headerRowMobile{
+    display: table-row;
+    vertical-align:middle;
+}
+
+div.headerCellMobile{
+    display: table-cell;
+    height:inherit;
+    width: 100vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    font-size:36px;
+    color:firebrick;
+}
+
 div.basicRow{
     display: table-row;
     height:inherit;
@@ -71,45 +129,6 @@ div.basicCellRight{
     padding-right: 8px;
 }
 
-div.headerCellLeft{
-    display: table-cell;
-    height:inherit;
-    width: 12vw;
-    background-color:inherit;
-    vertical-align:inherit;
-    text-align:right;
-    padding-right:10px;
-    padding-left:10px;
-}
-
-div.headerCellCenter{
-    display: table-cell;
-    height:inherit;
-    width: 76vw;
-    background-color:inherit;
-    vertical-align:inherit;
-    text-align:center;
-    font-family:'Arial Rounded MT';
-    font-size:64px;
-    color:firebrick;
-}
-
-div.headerCellRight{
-    display: table-cell;
-    height:inherit;
-    width: 12vw;
-    background-color:inherit;
-    vertical-align:inherit;
-    text-align:left;
-}
-
-img.headerCellLeft{
-    height:90%;
-}
-
-img.headerCellRight{
-    height:100%
-}
 
 img.team
 {
