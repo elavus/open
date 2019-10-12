@@ -58,6 +58,7 @@ img.headerCellRight{
 
 div.headerRowMobile{
     display: table-row;
+    height:10vh;
     vertical-align:middle;
 }
 
@@ -69,7 +70,7 @@ div.headerCellMobile{
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
-    font-size:30px;
+    font-size:36px;
     color:firebrick;
 }
 
