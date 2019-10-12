@@ -318,18 +318,22 @@ function openController($scope, $interval, $location, openFactory)
             {
                 case 1:
                     vm.Teams[i].Icon = '🥇';
+                    vm.Teams[i].Place = '1st';
                     break;
 
                 case 2:
                     vm.Teams[i].Icon = '🥈';
+                    vm.Teams[i].Place = '2nd';
                     break;
 
                 case 3:
                     vm.Teams[i].Icon = '🥉';
+                    vm.Teams[i].Place = '3rd';
                     break;
 
                 default:
                     vm.Teams[i].Icon = '😓';
+                    vm.Teams[i].Place = 'Last';
                     break;
             }
         }

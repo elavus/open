@@ -56,10 +56,10 @@ img.headerCellRight{
     height:100%
 }
 
-div.headerRowMobile{
+div.headerRowMobile {
     display: table-row;
-    height:10vh;
-    vertical-align:middle;
+    height: inherit;
+    vertical-align: middle;
 }
 
 div.headerCellMobile{
@@ -70,9 +70,11 @@ div.headerCellMobile{
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
-    font-size:36px;
+    font-size:48px;
     color:firebrick;
-}
+    padding-top:6px;
+    padding-bottom:6px;
+}}
 
 div.basicRow{
     display: table-row;
@@ -117,6 +119,7 @@ div.basicCellLeftCenter{
     font-size: inherit;
     color:navy;
 }
+
 div.basicCellRight{
     display: table-cell;
     height:inherit;
@@ -131,6 +134,66 @@ div.basicCellRight{
 }
 
 
+div.basicCellLeftMobile{
+    display: table-cell;
+    height:inherit;
+    width: 9vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:right;
+    padding-right:10px;
+    font-family:'Arial Rounded MT';
+    font-size: inherit;
+    color:navy;
+}
+
+div.basicCellCenterMobile{
+    display: table-cell;
+    height:inherit;
+    width: 80vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    font-size: inherit;
+    color:navy;
+}
+
+div.basicCellLeftCenterMobile{
+    display: table-cell;
+    height:inherit;
+    width: 89vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+    font-size: inherit;
+    color:navy;
+}
+
+div.basicCellRightMobile{
+    display: table-cell;
+    height:inherit;
+    width: 9vw;
+    background-color:inherit;
+    vertical-align:inherit;
+    text-align:right;
+    font-family:'Arial Rounded MT';
+    font-size:inherit;
+    color:navy;
+    padding-right: 8px;
+}
+
+div.athleteDetail{
+    display: table-cell;
+    height:inherit;
+    width: 100vw;
+    font-family:'Arial Rounded MT';
+    font-size: 24px;
+    color:darkgray;
+}
+
+
 img.team
 {
     height:100%;
@@ -142,12 +205,25 @@ div.teamsRow{
     height: 84vh;
 }
 
+div.teamsRowMobile{
+    display: table-row;    
+}
+
 div.teamsCell{
     display: table-cell;
     height:inherit;
     width: 25vw;
     vertical-align: middle;
     text-align:center;
+}
+
+div.teamsCellMobile{
+    display: table-cell;
+    height:inherit;
+    width: 100vw;
+    vertical-align: middle;
+    text-align:center;
+    padding-bottom:10px;
 }
 
 
@@ -160,10 +236,25 @@ div.teamCell{
     font-size: 36px;
 }
 
+div.teamCellMobile{
+    display: inline-block;
+    height:98%;
+    width: 98%;
+    border-radius: 50px 50px 25px 25px;
+    background-color: lightgrey;
+    font-size: 36px;
+}
+
 img.teamHeader {
     display: inline-block;
     width: inherit;
     border-radius: 100px 100px 0px 0px;
+}
+
+img.teamHeaderMobile {
+    display: inline-block;
+    width: inherit;
+    border-radius: 50px 50px 0px 0px;
 }
 
 /* Tooltip text */
