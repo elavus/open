@@ -31,11 +31,7 @@
         <div class="teamsRow">
             <div ng-repeat="team in vm.Teams" class="teamsCell">
                 <div class="teamCell">
-                    <img ng-show="team.IsAustin" class="teamHeader" ng-src="Images/Austin.jpg" />
-                    <img ng-show="team.IsDJ" class="teamHeader" ng-src="Images/DJ.jpg" />
-                    <img ng-show="team.IsJen" class="teamHeader" ng-src="Images/Jen.jpg" />
-                    <img ng-show="team.IsKendra" class="teamHeader" ng-src="Images/Kendra.jpg" />
-
+                    <img class="teamHeader" ng-src="Images/{{team.Logo}}" />
                     <div class="table">
                         <div class="basicRow">
                             <div class="basicCellLeft">
@@ -94,10 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <img ng-show="team.IsAustin" class="teamHeaderMobile" ng-src="Images/Austin.jpg" />
-                    <img ng-show="team.IsDJ" class="teamHeaderMobile" ng-src="Images/DJ.jpg" />
-                    <img ng-show="team.IsJen" class="teamHeaderMobile" ng-src="Images/Jen.jpg" />
-                    <img ng-show="team.IsKendra" class="teamHeaderMobile" ng-src="Images/Kendra.jpg" />
+                    <img class="teamHeader" ng-src="Images/{{team.Logo}}" />
 
                     <div class="table">
                         <div class="basicRow">

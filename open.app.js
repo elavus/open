@@ -137,26 +137,7 @@ function openController($scope, $interval, $location, openFactory)
             value.Name = vm.Sheet.Teams[i].gsx$name.$t;
             value.Score = 0;
             value.Initialized = false;
-
-            if (key == 'Austin')
-            {
-                value.IsAustin = 1;
-            }
-
-            if (key == 'DJ')
-            {
-                value.IsDJ = 1;
-            }
-
-            if (key == 'Jen')
-            {
-                value.IsJen = 1;
-            }
-
-            if (key == 'Kendra')
-            {
-                value.IsKendra = 1;
-            }
+            value.Logo = vm.Sheet.Teams[i].gsx$logo.$t;
         }
 
         getAthletes();
