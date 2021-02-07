@@ -14,9 +14,6 @@ function openController($scope, $interval, $location, openFactory)
     vm.Initialized = false;
     vm.MaxWeekWithScore = 0;
 
-
-
-
     vm.IsMobile = false;
     if (window.innerHeight > window.innerWidth)
     {
