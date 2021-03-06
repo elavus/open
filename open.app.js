@@ -135,6 +135,8 @@ function openController($scope, $interval, $location, openFactory)
             value.Score = 0;
             value.Initialized = false;
             value.Logo = vm.Sheet.Teams[i].gsx$logo.$t;
+            value.BackColor = vm.Sheet.Teams[i].gsx$backcolor.$t;
+            value.ForeColor = vm.Sheet.Teams[i].gsx$forecolor.$t;
         }
 
         getAthletes();
@@ -238,13 +240,17 @@ function openController($scope, $interval, $location, openFactory)
         var athlete;
         var score;
         var order;
+        var athletePair;
+        var teamAthleteCount;
 
         vm.Teams = [];
         for (var i = 0; i < vm.Sheet.Teams.length; i++)
         {
             team = vm.Maps.Teams.get(vm.Sheet.Teams[i].gsx$coach.$t);
 
+            team.AthletePairs = [];
             team.Athletes = [];
+            teamAthleteCount = 0;
             for (var j = 0; j < vm.Sheet.Athletes.length; j++)
             {
                 if (vm.Sheet.Athletes[j].gsx$coach.$t == vm.Sheet.Teams[i].gsx$coach.$t)
@@ -255,7 +261,16 @@ function openController($scope, $interval, $location, openFactory)
                         athlete.Icon = '💪';
                     }
                     team.Athletes.push(athlete);
+
+                    if ((teamAthleteCount % 2) == 0) {
+                        athletePair = {};
+                        athletePair.Athlete = [];
+                        team.AthletePairs.push(athletePair);
+                    }
+                    team.AthletePairs[team.AthletePairs.length - 1].Athlete.push(athlete);
+                    teamAthleteCount++;
                 }
+
             }
 
             team.Score = team.Score / team.Athletes.length;

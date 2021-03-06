@@ -1,5 +1,5 @@
 ﻿body {
-    background-color:silver;
+    background-color:darkgray;
     font-family:Verdana;
     margin:0px;
 }
@@ -74,62 +74,105 @@ div.headerCellMobile{
     color:firebrick;
     padding-top:6px;
     padding-bottom:6px;
-}}
+}
 
-div.basicRow{
+div.teamRow{
     display: table-row;
     height:inherit;
     vertical-align:middle;
     font-size:30px;
 }
 
+div.teamCellLeft {
+    display: table-cell;
+    height: inherit;
+    width: 10vw;
+    background-color: inherit;
+    vertical-align: inherit;
+    text-align: center;
+    padding-right: 10px;
+    font-family: 'Arial Rounded MT';
+    font-size: inherit;
+}
+
+div.teamCellCenter {
+    display: table-cell;
+    height: inherit;
+    width: 30vw;
+    background-color: inherit;
+    vertical-align: inherit;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size: inherit;
+}
+
+div.teamCellRight {
+    display: table-cell;
+    height: inherit;
+    width: 10vw;
+    background-color: inherit;
+    vertical-align: inherit;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size: inherit;
+    padding-right: 8px;
+}
+
+div.basicRow {
+    display: table-row;
+    height: inherit;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+div.basicCell {
+    display: table-cell;
+    height: inherit;
+}
+
 div.basicCellLeft{
     display: table-cell;
     height:inherit;
-    width: 3vw;
+    width: 5vw;
     background-color:inherit;
     vertical-align:inherit;
-    text-align:right;
+    text-align:center;
     padding-right:10px;
     font-family:'Arial Rounded MT';
     font-size: inherit;
-    color:navy;
 }
 
 div.basicCellCenter{
     display: table-cell;
     height:inherit;
-    width: 18vw;
+    width: 15vw;
     background-color:inherit;
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
     font-size: inherit;
-    color:navy;
 }
 
 div.basicCellLeftCenter{
     display: table-cell;
     height:inherit;
-    width: 21vw;
+    width: 20vw;
     background-color:inherit;
     vertical-align:inherit;
     text-align:center;
     font-family:'Arial Rounded MT';
     font-size: inherit;
-    color:navy;
 }
 
 div.basicCellRight{
     display: table-cell;
     height:inherit;
-    width: 3vw;
+    width: 5vw;
     background-color:inherit;
     vertical-align:inherit;
-    text-align:right;
+    text-align:left;
     font-family:'Arial Rounded MT';
     font-size:inherit;
-    color:navy;
     padding-right: 8px;
 }
 
@@ -144,7 +187,6 @@ div.basicCellLeftMobile{
     padding-right:10px;
     font-family:'Arial Rounded MT';
     font-size:x-large;
-    color:navy;
 }
 
 div.basicCellCenterMobile{
@@ -156,7 +198,6 @@ div.basicCellCenterMobile{
     text-align:center;
     font-family:'Arial Rounded MT';
     font-size:x-large;
-    color:navy;
 }
 
 div.basicCellLeftCenterMobile{
@@ -168,7 +209,6 @@ div.basicCellLeftCenterMobile{
     text-align:center;
     font-family:'Arial Rounded MT';
     font-size:48px;
-    color:navy;
 }
 
 div.basicCellRightMobile{
@@ -180,7 +220,6 @@ div.basicCellRightMobile{
     text-align:right;
     font-family:'Arial Rounded MT';
     font-size:48px;
-    color:navy;
     padding-right: 8px;
 }
 
@@ -190,7 +229,6 @@ div.athleteDetail{
     width: 100vw;
     font-family:'Arial Rounded MT';
     font-size:36px;
-    color:black;
 }
 
 
@@ -212,7 +250,7 @@ div.teamsRowMobile{
 div.teamsCell{
     display: table-cell;
     height:inherit;
-    width: 25vw;
+    width: 50vw;
     vertical-align: middle;
     text-align:center;
 }
@@ -231,8 +269,7 @@ div.teamCell{
     display: inline-block;
     height:98%;
     width: 98%;
-    border-radius: 100px 100px 50px 50px;
-    background-color: lightgrey;
+    border-radius: 50px 50px 50px 50px;
     font-size: 36px;
 }
 
@@ -248,7 +285,7 @@ div.teamCellMobile{
 img.teamHeader {
     display: inline-block;
     width: inherit;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
 }
 
 img.teamHeaderMobile {
@@ -259,20 +296,18 @@ img.teamHeaderMobile {
 
 /* Tooltip text */
 .basicCellLeftCenter .tooltiptext {
-  visibility: hidden;
-
-  top: 15vh;
-  width: 50vw;
-  left: 25vw;
-  background-color: navy;
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
+    visibility: hidden;
+    top: 15vh;
+    width: 50vw;
+    left: 25vw;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -281,20 +316,18 @@ img.teamHeaderMobile {
 }
 
 .headerCellLeft .tooltiptext {
-  visibility: hidden;
-
-  top: 15vh;
-  width: 50vw;
-  left: 25vw;
-  background-color: navy;
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
+    visibility: hidden;
+    top: 15vh;
+    width: 50vw;
+    left: 25vw;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
