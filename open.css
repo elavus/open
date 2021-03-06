@@ -177,27 +177,27 @@ div.basicCellRight{
 }
 
 
-div.basicCellLeftMobile{
+div.basicCellLeftMobile {
     display: table-cell;
-    height:inherit;
+    height: inherit;
     width: 9vw;
-    background-color:inherit;
-    vertical-align:inherit;
-    text-align:right;
-    padding-right:10px;
-    font-family:'Arial Rounded MT';
-    font-size:x-large;
+    background-color: inherit;
+    vertical-align: inherit;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Arial Rounded MT';
+    font-size: 48px;
 }
 
-div.basicCellCenterMobile{
+div.basicCellCenterMobile {
     display: table-cell;
-    height:inherit;
+    height: inherit;
     width: 80vw;
-    background-color:inherit;
-    vertical-align:inherit;
-    text-align:center;
-    font-family:'Arial Rounded MT';
-    font-size:x-large;
+    background-color: inherit;
+    vertical-align: inherit;
+    text-align: center;
+    font-family: 'Arial Rounded MT';
+    font-size: 48px;
 }
 
 div.basicCellLeftCenterMobile{
