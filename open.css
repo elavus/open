@@ -294,6 +294,10 @@ img.teamHeaderMobile {
     border-radius: 50px 50px 0px 0px;
 }
 
+img.headerMobile {
+    display: inline-block;
+    width: inherit;
+}
 /* Tooltip text */
 .basicCellLeftCenter .tooltiptext {
     visibility: hidden;
