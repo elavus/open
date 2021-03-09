@@ -296,7 +296,8 @@ img.teamHeaderMobile {
 
 img.headerMobile {
     display: inline-block;
-    width: inherit;
+    width: 99vw;
+    height:auto;
 }
 /* Tooltip text */
 .basicCellLeftCenter .tooltiptext {
